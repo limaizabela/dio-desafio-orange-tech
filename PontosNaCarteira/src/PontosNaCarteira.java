@@ -12,18 +12,15 @@ public class PontosNaCarteira {
 
         if (velocidade > 80 && contador >= 3){
             System.out.println(contador +" multas. Levou pontos na carteira");
-
         }
         if (velocidade > 80 && contador == 2){
             System.out.println(contador +" multas. Não levou pontos na carteira");
-
         }
         if (velocidade == 80 && contador >= 1){
             System.out.println(multas +" multa. Não levou pontos na carteira");
-
         } */
         if(velocidade > 80){
-            multas ++;
+            multas ++; 
         }
   
         if(multas > 2){
