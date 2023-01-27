@@ -8,7 +8,7 @@ public class PontosNaCarteira {
         System.out.println("Informe a quantidade de multas: ");
         int multas = leitor.nextInt();
 
-        int contador = 1 + multas;
+        /* int contador = 1 + multas;
 
         if (velocidade > 80 && contador >= 3){
             System.out.println(contador +" multas. Levou pontos na carteira");
@@ -21,8 +21,16 @@ public class PontosNaCarteira {
         if (velocidade == 80 && contador >= 1){
             System.out.println(multas +" multa. Não levou pontos na carteira");
 
+        } */
+        if(velocidade > 80){
+            multas ++;
         }
-
+  
+        if(multas > 2){
+            System.out.println(multas + " multas. Levou pontos na carteira");
+        }else{
+            System.out.println(multas + " multas. Nao levou pontos na carteira");
+        }
     }
     
 }
